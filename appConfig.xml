@@ -7,7 +7,14 @@
    <userviewDefinitionList/>
    <datalistDefinitionList/>
    <builderDefinitionList/>
-   <pluginDefaultPropertiesList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.mobile.MobilePushNotificationAuditTrail</id>
+         <pluginName>Mobile Push Notification</pluginName>
+         <pluginDescription>Send push notification to mobile devices on task assignment</pluginDescription>
+         <pluginProperties>{&quot;base&quot;:&quot;https:\/\/megademo.cloud.joget.com\/jw\/&quot;,&quot;title&quot;:&quot;New Task: #assignment.activityName#&quot;,&quot;body&quot;:&quot;A new task has been created by the process #assignment.processName#&quot;,&quot;url&quot;:&quot;&quot;,&quot;urlName&quot;:&quot;&quot;,&quot;parameterName&quot;:&quot;activityId&quot;,&quot;passoverMethod&quot;:&quot;param&quot;,&quot;exclusion&quot;:&quot;&quot;,&quot;mobileServerUrl&quot;:&quot;https:\/\/mobile.cloud.joget.com\/jw&quot;,&quot;webServiceKey&quot;:&quot;&quot;,&quot;extraData&quot;:[]}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
    <environmentVariableList>
       <environmentVariable>
          <id>appName</id>
