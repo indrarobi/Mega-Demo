@@ -264,8 +264,8 @@
             "properties": {
                 "message": "",
                 "subject": "",
-                "toParticipantId": "",
-                "toSpecific": "",
+                "toParticipantId": "participant1",
+                "toSpecific": "cat",
                 "url": ""
             }
         },
