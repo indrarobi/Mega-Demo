@@ -1,5 +1,17 @@
-{"properties": {
-    "description": "",
-    "id": "API-0b67bdcb-8ed2-4553-97fa-e479d621c4fd",
-    "name": "API Form Sample"
-}}
+{
+    "elements": [{
+        "className": "org.joget.api.lib.AppFormAPI",
+        "properties": {
+            "ENABLED_PATHS": "post:/;delete:/{recordId};put:/;get:/{recordId}/{fieldId}/files;post:/addWithFiles",
+            "formDefId": "calendarMeeting",
+            "id": "BB348FE7-3986-4FCE-AE18-881C4143A2EA",
+            "ignorePermission": "",
+            "label": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "API-0b67bdcb-8ed2-4553-97fa-e479d621c4fd",
+        "name": "API Form Sample"
+    }
+}
