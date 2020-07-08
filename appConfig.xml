@@ -35,7 +35,7 @@
          <id>rcounter</id>
          <appId>jshowcasedx</appId>
          <appVersion>1</appVersion>
-         <value>17</value>
+         <value>18</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
    </environmentVariableList>
