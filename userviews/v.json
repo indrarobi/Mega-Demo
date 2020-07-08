@@ -1403,6 +1403,28 @@
                     "properties": {}
                 }
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
+                "properties": {
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "",
+                    "enableOffline": "",
+                    "id": "CE0D7DD53A43414F9451238CBD0FF000",
+                    "label": "Report",
+                    "reportId": "rp_sample",
+                    "reportParams": [],
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-D2F96901AD8749FDBBA4ADB0A8EA51A1",
+                "label": "Report"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
