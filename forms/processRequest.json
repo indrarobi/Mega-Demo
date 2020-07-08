@@ -265,7 +265,7 @@
                 "message": "Ini adalah PWA New Notification Task\n\n\nTrims",
                 "subject": "New Task Incoming",
                 "toParticipantId": "participant1",
-                "toSpecific": "cat",
+                "toSpecific": "cat;admin;",
                 "url": ""
             }
         },
