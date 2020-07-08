@@ -137,6 +137,7 @@
             "properties": {
                 "comment": "",
                 "id": "section1",
+                "join": "",
                 "label": "<i class=\"fa fa-wpforms\" aria-hidden=\"true\"><\/i> Request Form",
                 "loadBinder": {
                     "className": "",
@@ -149,10 +150,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
-                }
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
@@ -255,8 +260,14 @@
             "properties": {}
         },
         "postProcessor": {
-            "className": "",
-            "properties": {}
+            "className": "org.joget.marketplace.PushNotificationTool",
+            "properties": {
+                "message": "",
+                "subject": "",
+                "toParticipantId": "",
+                "toSpecific": "",
+                "url": ""
+            }
         },
         "postProcessorRunOn": "both",
         "storeBinder": {
