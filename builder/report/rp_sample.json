@@ -1,12 +1,56 @@
-{"properties": {
-    "bottomMargin": "10",
-    "description": "",
-    "id": "rp_sample",
-    "leftMargin": "10",
-    "name": "Report Sample",
-    "orientation": "portrait",
-    "pageHeight": "297",
-    "pageWidth": "210",
-    "rightMargin": "10",
-    "topMargin": "10"
-}}
+{
+    "body": {"elements": [{
+        "className": "org.joget.rbuilder.lib.ListReportElement",
+        "properties": {
+            "datalistId": "chartData",
+            "filterParams": [],
+            "footer": [],
+            "footerRowlabel": "",
+            "formulaColumns": [],
+            "headerColor": "#F3B413",
+            "headerTextColor": "",
+            "id": "F52B3F34-A977-45A0-CBAB-7AF0B4A4D863"
+        }
+    }]},
+    "footer": {"elements": []},
+    "header": {"elements": [
+        {
+            "className": "org.joget.rbuilder.lib.ImageReportElement",
+            "properties": {
+                "halign": "center",
+                "height": "",
+                "id": "0D9EA3AE-030A-4147-0314-683AFD05E87D",
+                "marginBottom": "10px",
+                "path": "#appResource.showcase-icon.png#",
+                "width": "100px"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.TextReportElement",
+            "properties": {
+                "align": "center",
+                "bold": "true",
+                "color": "",
+                "decoration": "",
+                "height": "",
+                "id": "3E12DB23-23CD-4EFA-3D8F-AFAB0E7DCFBE",
+                "italic": "",
+                "marginBottom": "10px",
+                "size": "",
+                "text": "Selamat Datang di Report Builder"
+            }
+        }
+    ]},
+    "properties": {
+        "bottomMargin": "10",
+        "description": "",
+        "id": "rp_sample",
+        "leftMargin": "10",
+        "name": "Report Sample",
+        "orientation": "portrait",
+        "pageHeight": "297",
+        "pageWidth": "210",
+        "rightMargin": "10",
+        "topMargin": "10"
+    }
+}
