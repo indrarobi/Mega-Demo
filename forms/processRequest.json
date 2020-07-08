@@ -1,0 +1,268 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field3",
+                                "label": "",
+                                "value": "#i18n.Welcome# #currentUser.firstName# #currentUser.firstName#.<br/>\n"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.IdGeneratorField",
+                            "properties": {
+                                "envVariable": "rcounter",
+                                "format": "R??????",
+                                "hidden": "true",
+                                "id": "rcounter",
+                                "label": "rcounter",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "approverUsername1",
+                                "label": "Select approver 1",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "",
+                                        "cacheIdlePause": "120",
+                                        "cacheInterval": "",
+                                        "deptId": "",
+                                        "emptyLabel": "",
+                                        "groupId": "",
+                                        "grouping": "",
+                                        "optionLabel": "",
+                                        "orgId": "",
+                                        "useAjax": ""
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "custom-regex": "",
+                                        "mandatory": "true",
+                                        "message": "",
+                                        "type": ""
+                                    }
+                                },
+                                "value": "",
+                                "workflowVariable": "approverUsername1"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "approverUsername2",
+                                "label": "Select approver 2",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "autoHandleFiles": "",
+                                        "autoHandleWorkflowVariable": "",
+                                        "cacheIdlePause": "120",
+                                        "cacheInterval": "",
+                                        "deptId": "",
+                                        "emptyLabel": "",
+                                        "groupId": "",
+                                        "grouping": "",
+                                        "optionLabel": "",
+                                        "orgId": "",
+                                        "useAjax": ""
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "mandatory": "true",
+                                        "message": "",
+                                        "type": ""
+                                    }
+                                },
+                                "value": "",
+                                "workflowVariable": "approverUsername2"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "approvalStatus1",
+                                "useDefaultWhenEmpty": "valueOnly",
+                                "value": "Pending",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "approvalStatus2",
+                                "useDefaultWhenEmpty": "valueOnly",
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "section1",
+                "label": "<i class=\"fa fa-wpforms\" aria-hidden=\"true\"><\/i> Request Form",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return \"#requestParam.activityId#\".equals(\"\");"}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field7",
+                            "label": "",
+                            "value": "<br/>\n<br/>\n"
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.MultiPagedForm",
+                        "properties": {
+                            "ajaxMode": "",
+                            "css": "",
+                            "displayMode": "tab",
+                            "id": "MPF",
+                            "nextButtonlabel": "Next",
+                            "numberOfPage": {
+                                "className": "4",
+                                "properties": {
+                                    "page1_formDefId": "ProcessRequestTab1",
+                                    "page1_label": "#i18n.Request Detail Page2#",
+                                    "page1_parentSubFormId": "page1_key",
+                                    "page1_readonly": "",
+                                    "page1_readonlyLabel": "",
+                                    "page1_subFormParentId": "parentId",
+                                    "page1_validate": "true",
+                                    "page2_formDefId": "ProcessRequestTab2",
+                                    "page2_label": "#i18n.Selections#",
+                                    "page2_parentSubFormId": "page2_key",
+                                    "page2_readonly": "",
+                                    "page2_readonlyLabel": "",
+                                    "page2_subFormParentId": "parentId",
+                                    "page2_validate": "true",
+                                    "page3_formDefId": "ProcessRequestTab3",
+                                    "page3_label": "#i18n.Request Detail Page3#",
+                                    "page3_parentSubFormId": "page3_key",
+                                    "page3_readonly": "",
+                                    "page3_readonlyLabel": "",
+                                    "page3_subFormParentId": "parentId",
+                                    "page3_validate": "true",
+                                    "page4_formDefId": "ProcessRequestTab4",
+                                    "page4_label": "#i18n.Request Detail Page4#",
+                                    "page4_parentSubFormId": "page4_key",
+                                    "page4_readonly": "",
+                                    "page4_readonlyLabel": "",
+                                    "page4_subFormParentId": "parentId",
+                                    "page4_validate": "true"
+                                }
+                            },
+                            "onlyAllowSubmitOnLastPage": "",
+                            "partiallyStore": "true",
+                            "prevButtonlabel": "Prev",
+                            "storeMainFormOnPartiallyStore": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section2",
+                "label": "<i class=\"fa fa-folder-o\" aria-hidden=\"true\"><\/i> Request Details",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "processRequest",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Process - Request",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_sc_tran"
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "categories": [{
+        "className": "org.joget.apps.userview.model.UserviewCategory",
+        "menus": [
+            {
+                "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                "properties": {
+                    "appFilter": "process",
+                    "assignment-customFooter": "",
+                    "assignment-customHeader": "",
+                    "customId": "dai",
+                    "datalistId": "dashboardInbox",
+                    "id": "7EF52FDB42D74CA99E9E2C59C41AA325",
+                    "keyName": "",
+                    "label": "Approver Inbox",
+                    "list-customFooter": "",
+                    "list-customHeader": "<script>\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\n<\/script>\n",
+                    "processId": "process1",
+                    "rowCount": "true",
+                    "showDetail": "",
+                    "showPopup": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            },
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "categoryAxisLabel": "Total Number Of Forms",
+                    "chartHeight": "40%",
+                    "chartType": "bubble",
+                    "chartWidth": "80%",
+                    "colors": "#01FF70,#2ECC40,#85144b,#B10DC9,#F012BE,#FF4136,#FF851B,#FFDC00",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "dbc",
+                    "datasource": "default",
+                    "id": "366DAB8485C84298B62837D2A86B8EF3",
+                    "keyName": "",
+                    "label": "Bubble Chart",
+                    "query": "select\r\n    (select COUNT(*) from app_form s1 where s1.appId=p.appId) as 'TotalForms', /*X value*/\r\n    (select COUNT(*) from app_datalist s2 where s2.appId=p.appId) as 'TotalLists', /*Y value*/\r\n    (select COUNT(*) from app_userview s3 where s3.appId=p.appId) as 'TotalUserviews', /*Size*/\r\nCONCAT(p.name, ' v', p.appVersion) as 'AppName'\r\nfrom app_app p\r\ngroup by AppName, TotalForms, TotalLists, TotalUserviews\r\nlimit 10",
+                    "title": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "Total Number Of Datalists"
+                }
+            },
+            {
+                "className": "org.joget.plugin.enterprise.CalendarMenu",
+                "properties": {
+                    "allDay": "",
+                    "autoHandleDateRange": "true",
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+                        "properties": {
+                            "jdbcDatasource": "default",
+                            "optimisePaging": "",
+                            "primaryKey": "id",
+                            "sql": "SELECT c_date, c_name\r\nFROM app_fd_j_meeting_data\r\nORDER BY c_date ASC"
+                        }
+                    },
+                    "cssClass": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "dcv",
+                    "dateFormat": "yyyy-MM-dd",
+                    "eventAfterAllRender": "//console.log(view);",
+                    "eventAfterRender": "//console.log(event); console.log(element); console.log(view);",
+                    "eventClick": "//console.log(event); console.log(jsEvent); console.log(view);",
+                    "eventColor": "",
+                    "eventId": "",
+                    "eventRender": "//console.log(event); console.log(element); console.log(view);",
+                    "eventTitle": "c_name",
+                    "eventUrl": "",
+                    "fields": [],
+                    "fromDate": "c_date",
+                    "fromTime": "",
+                    "google_calendars": [],
+                    "id": "9F80A5F483E744F9A7D86E7F8B20BCFD",
+                    "label": "Calendar View",
+                    "timeFormat": "",
+                    "title": "",
+                    "toDate": "",
+                    "toTime": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }
+        ],
+        "properties": {
+            "comment": "",
+            "hide": "",
+            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+            "label": "<i class='fa fa-home'><\/i> Home",
+            "permission": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "zDashboard",
+        "logoutText": "Logout",
+        "name": "zDashboard",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "hideThisUserviewInAppCenter": "true",
+        "permission": {
+            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.UniversalTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "GREY",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "true",
+                "enableResponsiveSwitch": "",
+                "fav_icon": "",
+                "fontColor": "WHITE",
+                "homeAttractBanner": "",
+                "horizontal_menu": "no",
+                "inbox": "",
+                "js": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "DARKROYALBLUE",
+                "profile": "true",
+                "removeAssignmentTitle": "true",
+                "shortcut": [],
+                "shortcutLinkLabel": "Shortcut",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "userImage": "no",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userview_thumbnail": ""
+    }}
+}

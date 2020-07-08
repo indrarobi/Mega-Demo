@@ -1,0 +1,201 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [
+            {
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "",
+                            "endDateFieldId": "",
+                            "format": "yy-mm-dd",
+                            "id": "date1",
+                            "label": "Date",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#date.yyyy-MM-dd#",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "dateTime",
+                            "endDateFieldId": "",
+                            "format": "yy-mm-dd",
+                            "format24hr": "true",
+                            "id": "date2",
+                            "label": "Date & Time",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#date.yyyy-MM-dd HH:mm:ss#",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "",
+                            "datePickerType": "timeOnly",
+                            "endDateFieldId": "",
+                            "format24hr": "true",
+                            "id": "date3",
+                            "label": "Time",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#date.HH:mm:ss#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "envVariable": "ecounter",
+                            "format": "??????",
+                            "hidden": "true",
+                            "id": "ecounter",
+                            "label": "ecounter",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "49%"}
+            },
+            {
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "",
+                            "endDateFieldId": "",
+                            "format": "yy-mm-dd",
+                            "id": "date4",
+                            "label": "Date (Tomorrow)",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#date.DAY+1.yyyy-MM-dd#",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "",
+                            "endDateFieldId": "",
+                            "format": "yy-mm-dd",
+                            "id": "date5",
+                            "label": "Date (Next Month)",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#date.MONTH+1.yyyy-MM-dd#",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "",
+                            "endDateFieldId": "",
+                            "format": "yy-mm-dd",
+                            "id": "date6",
+                            "label": "Date (Next Year)",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#date.YEAR+1.yyyy-MM-dd#",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
+                        }
+                    }
+                ],
+                "properties": {"width": "49%"}
+            }
+        ],
+        "properties": {
+            "comment": "",
+            "id": "section2_1",
+            "label": "<i class=\"fa fa-calendar\" aria-hidden=\"true\"><\/i> Date & Time Fields",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "featureDateTime",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Feature - DateTime",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t1"
+    }
+}

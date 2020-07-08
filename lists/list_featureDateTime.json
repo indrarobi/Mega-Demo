@@ -1,0 +1,68 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "featureDateTime"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Date",
+            "name": "date1",
+            "sortable": "false"
+        },
+        {
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Date & Time",
+            "name": "date2",
+            "sortable": "false"
+        },
+        {
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Time",
+            "name": "date3",
+            "sortable": "false"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [{
+        "id": "filter_0",
+        "label": "Date",
+        "name": "date1",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        }
+    }],
+    "hidePageSize": "",
+    "id": "list_featureDateTime",
+    "name": "List - Feature - DateTime",
+    "order": "1",
+    "orderBy": "dateCreated",
+    "pageSize": "50",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

@@ -1,0 +1,104 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.plugin.enterprise.RichTextEditorField",
+                    "properties": {
+                        "editor": "quill",
+                        "height": "200",
+                        "id": "richTextEditor",
+                        "label": "Rich Text Editor",
+                        "mode": "full",
+                        "permissionType": "",
+                        "placeholder": "",
+                        "qmode": "full",
+                        "readonly": "",
+                        "switch": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field14",
+                        "label": "",
+                        "value": "<br/>"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.Signature",
+                    "properties": {
+                        "encryption": "true",
+                        "height": "80",
+                        "id": "signature",
+                        "label": "Signature",
+                        "readonly": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "width": "200"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field14_1",
+                        "label": "",
+                        "value": "<br/><br/>"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "properties": {
+                        "envVariable": "ecounter",
+                        "format": "??????",
+                        "hidden": "true",
+                        "id": "ecounter",
+                        "label": "ecounter",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section3",
+            "label": "<i class=\"fa fa-align-justify\" aria-hidden=\"true\"><\/i> Miscellaneous Fields",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "featureMiscField",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Feature - Misc Field",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t1"
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "candleStick"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Date",
+            "name": "Date",
+            "sortable": "false",
+            "style": "text-align: center;",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Stock Code",
+            "name": "StockCode",
+            "sortable": "false",
+            "style": "text-align: center;",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Opening Price $",
+            "name": "Open",
+            "sortable": "false",
+            "style": "text-align: center;",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Highest Price $",
+            "name": "Highest",
+            "sortable": "false",
+            "style": "text-align: center;",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Lowest Price $",
+            "name": "Lowest",
+            "sortable": "false",
+            "style": "text-align: center;",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Closing Price $",
+            "name": "Closing",
+            "sortable": "false",
+            "style": "text-align: center;",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "hidePageSize": "true",
+    "id": "candleStick",
+    "name": "Candlestick Data",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "100",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

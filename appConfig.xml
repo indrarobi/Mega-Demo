@@ -1,0 +1,36 @@
+<appDefinition>
+   <id>jshowcasedx</id>
+   <version></version>
+   <name>DX Showcase</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>appName</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <value>Joget DX Showcase</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>ecounter</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <value>1</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>rcounter</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <value>16</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>1i44Neuka7RRu+22/jBpdqFp/tdq4ijmTtjtQIzB0iiChu98G79hNHSaJF+QK4EE</license>
+</appDefinition>

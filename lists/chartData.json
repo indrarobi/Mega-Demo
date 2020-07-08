@@ -1,0 +1,55 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "chartData"}
+    },
+    "columns": [
+        {
+            "id": "column_1",
+            "label": "Parameter 1",
+            "name": "parameter1"
+        },
+        {
+            "id": "column_2",
+            "label": "Parameter 2",
+            "name": "parameter2"
+        },
+        {
+            "id": "column_3",
+            "label": "Parameter 3",
+            "name": "parameter3"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Value",
+            "name": "value",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "description": "",
+    "filters": [{
+        "id": "filter_0",
+        "label": "Parameter 1",
+        "name": "parameter1"
+    }],
+    "hidePageSize": "true",
+    "id": "chartData",
+    "name": "Chart Data",
+    "order": "2",
+    "orderBy": "parameter1",
+    "pageSize": "100",
+    "rowActions": []
+}

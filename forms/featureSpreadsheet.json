@@ -1,0 +1,117 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
+                "properties": {
+                    "customSettings": "",
+                    "disabledAdd": "",
+                    "disabledDelete": "",
+                    "errorMessage": "Invalid number of rows",
+                    "fixedColumnsLeft": "0",
+                    "headerSorting": "true",
+                    "id": "SP",
+                    "label": "",
+                    "loadBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "fk",
+                            "formDefId": "gridSp"
+                        }
+                    },
+                    "minSpareRows": "1",
+                    "options": [
+                        {
+                            "format": "",
+                            "formatType": "",
+                            "formula": "",
+                            "label": "Name",
+                            "readonly": "",
+                            "regexValidator": "",
+                            "value": "name",
+                            "width": ""
+                        },
+                        {
+                            "format": "gridSp",
+                            "formatType": "dropdown",
+                            "formula": "",
+                            "label": "Select",
+                            "readonly": "",
+                            "regexValidator": "",
+                            "value": "select",
+                            "width": ""
+                        },
+                        {
+                            "format": "",
+                            "formatType": "date",
+                            "formula": "",
+                            "label": "Date",
+                            "readonly": "",
+                            "regexValidator": "",
+                            "value": "date",
+                            "width": ""
+                        },
+                        {
+                            "format": "gridSp",
+                            "formatType": "file",
+                            "formula": "",
+                            "label": "File",
+                            "readonly": "",
+                            "regexValidator": "",
+                            "value": "file",
+                            "width": ""
+                        }
+                    ],
+                    "readonly": "",
+                    "showRowNumber": "true",
+                    "sortingField": "",
+                    "storeBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "fk",
+                            "formDefId": "gridSp"
+                        }
+                    },
+                    "validateMaxRow": "",
+                    "validateMinRow": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    }
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "label": "Spreadsheet",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "featureSpreadsheet",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Feature - Spreadsheet",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t4"
+    }
+}

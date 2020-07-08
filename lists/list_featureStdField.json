@@ -1,0 +1,133 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "featureStdField"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "displayLabel": "TextField",
+            "id": "column_1",
+            "label": "TextField",
+            "name": "textField"
+        },
+        {
+            "displayLabel": "TextArea",
+            "id": "column_0",
+            "label": "TextArea",
+            "name": "textArea"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignRight",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignRight",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Numeric1",
+            "name": "numeric1",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignRight",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignRight",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Numeric2",
+            "name": "numeric2",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignRight",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignRight",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Total",
+            "name": "calculation",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [
+        {
+            "id": "filter_3",
+            "label": "TextField",
+            "name": "textField",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_0",
+            "label": "TextArea",
+            "name": "textArea",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        }
+    ],
+    "hidePageSize": "",
+    "id": "list_featureStdField",
+    "name": "List - Feature - Standard Fields",
+    "order": "2",
+    "orderBy": "dateCreated",
+    "pageSize": "50",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

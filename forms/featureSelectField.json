@@ -1,0 +1,200 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "selectBox",
+                        "label": "Select Box",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheIdlePause": "120",
+                                "cacheInterval": "",
+                                "deptId": "",
+                                "emptyLabel": "",
+                                "groupId": "",
+                                "grouping": "",
+                                "optionLabel": "",
+                                "orgId": "",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "admin",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.MultiSelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "multiSelectBox",
+                        "label": "Multi Select Box",
+                        "multiple": "true",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.GroupOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheIdlePause": "120",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "orgId": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "admin",
+                        "width": "40%",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CheckBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "checkBox",
+                        "label": "Check Box",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.DepartmentOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheIdlePause": "120",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "orgId": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "radio",
+                        "label": "Radio",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.GradeOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheIdlePause": "120",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "orgId": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.PopupSelectBox",
+                    "properties": {
+                        "buttonLabel": "Select",
+                        "displayField": "firstName",
+                        "height": "80%",
+                        "id": "popupSelectBox",
+                        "idField": "",
+                        "label": "Popup Select Box",
+                        "listId": "userlist",
+                        "multiple": "true",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "requestParams": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "width": "50%",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field14_1",
+                        "label": "",
+                        "value": "<br/><br/>"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "properties": {
+                        "envVariable": "ecounter",
+                        "format": "??????",
+                        "hidden": "true",
+                        "id": "ecounter",
+                        "label": "ecounter",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "label": "<i class=\"fa fa-check-square-o\" aria-hidden=\"true\"><\/i> Selection Fields",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "featureSelectField",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Feature - Select Fields",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t2"
+    }
+}

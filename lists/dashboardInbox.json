@@ -1,0 +1,55 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "processRequest"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [{
+        "action": {
+            "className": "",
+            "properties": {}
+        },
+        "alignment": "",
+        "datalist_type": "column",
+        "exclude_export": "",
+        "format": {
+            "className": "",
+            "properties": {}
+        },
+        "headerAlignment": "",
+        "hidden": "false",
+        "id": "column_4",
+        "label": "Counter",
+        "name": "rcounter",
+        "sortable": "true",
+        "style": "",
+        "width": ""
+    }],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-1545391-fn_rcounter",
+        "hidden": "",
+        "id": "filter_1",
+        "label": "Counter",
+        "name": "rcounter",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {"defaultValue": ""}
+        }
+    }],
+    "hidePageSize": "",
+    "id": "dashboardInbox",
+    "name": "Dashboard Approver Inbox",
+    "order": "1",
+    "orderBy": "dateCreated",
+    "pageSize": "50",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

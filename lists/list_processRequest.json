@@ -1,0 +1,217 @@
+{
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "id": "action_0",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "confirmation": "",
+            "datalist_type": "action",
+            "href": "submitRequest",
+            "hrefColumn": "",
+            "hrefParam": "",
+            "label": "#i18n.Submit a new reques label#",
+            "target": "_self",
+            "visible": "true"
+        },
+        "type": "text"
+    }],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "processRequest"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Counter",
+            "name": "rcounter",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignRight",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignRight",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Approver 1",
+            "name": "approverUsername1",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "color": "",
+                    "field": "",
+                    "formDefId": "",
+                    "formatting": "b",
+                    "size": ""
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Status",
+            "name": "approvalStatus1",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignRight",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignRight",
+            "hidden": "false",
+            "id": "column_7",
+            "label": "Approver 2",
+            "name": "approverUsername2",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "color": "",
+                    "field": "",
+                    "formDefId": "",
+                    "formatting": "b",
+                    "size": ""
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_6",
+            "label": "Status",
+            "name": "approvalStatus2",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "eventClick": "",
+                    "showFutureActivities": "true",
+                    "showProcessName": "true",
+                    "showSkippedActivities": "true",
+                    "usernameFormat": "name"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Process",
+            "name": "id",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Created",
+            "name": "dateCreated",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-1545391-fn_rcounter",
+        "hidden": "",
+        "id": "filter_1",
+        "label": "Counter",
+        "name": "rcounter",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {"defaultValue": ""}
+        }
+    }],
+    "hidePageSize": "",
+    "id": "list_processRequest",
+    "name": "List - Process - Request",
+    "order": "1",
+    "orderBy": "dateCreated",
+    "pageSize": "50",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

@@ -1,0 +1,123 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.FileUpload",
+                    "properties": {
+                        "attachment": "true",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "fileUpload",
+                        "label": "File Upload (Allows multiple files)",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "true",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section1",
+                "label": "<i class=\"fa fa-upload\" aria-hidden=\"true\"><\/i> File Uploads",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.plugin.enterprise.ImageUpload",
+                        "properties": {
+                            "createThumbnail": "true",
+                            "fileType": ".jpeg;.jpg;.gif;.png",
+                            "fileTypeMsg": "Invalid file type",
+                            "height": "100",
+                            "id": "imageUpload_1",
+                            "label": "Image Upload (Allows multiple files)",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "true",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "width": "100"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field14_1",
+                            "label": "",
+                            "value": "<br/><br/>"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section1_1",
+                "label": "<i class=\"fa fa-upload\" aria-hidden=\"true\"><\/i> Image Uploads",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "ProcessRequestTab3",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Process - Request Tab3",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t3"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "featureMiscField"}
+    },
+    "columns": [{
+        "displayLabel": "Rich Text Editor",
+        "id": "column_0",
+        "label": "Rich Text Editor",
+        "name": "richTextEditor"
+    }],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_featureMiscField",
+    "name": "List - Feature - Misc Field",
+    "order": "2",
+    "orderBy": "dateCreated",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "useSession": ""
+}

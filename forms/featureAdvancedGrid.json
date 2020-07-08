@@ -1,0 +1,95 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                "properties": {
+                    "deleteMessage": "Delete row?",
+                    "disabledAdd": "",
+                    "disabledDelete": "",
+                    "errorMessage": "Invalid number of rows",
+                    "formDefId": "gridadv",
+                    "hint": "#i18n.Click to edit. Tab to save#.",
+                    "id": "AG",
+                    "keyToSave": "9",
+                    "label": "Grid",
+                    "loadBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "fk",
+                            "formDefId": "gridadv"
+                        }
+                    },
+                    "options": [
+                        {
+                            "formatType": "",
+                            "label": "Name",
+                            "readonly": "",
+                            "value": "name",
+                            "width": ""
+                        },
+                        {
+                            "formatType": "date",
+                            "label": "Date",
+                            "readonly": "",
+                            "value": "date",
+                            "width": ""
+                        }
+                    ],
+                    "pagingOptions": "10,20,50,100",
+                    "readonly": "",
+                    "recordPerPage": "20",
+                    "search": "",
+                    "showRowNumber": "true",
+                    "sortIndx": "",
+                    "storeBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "fk",
+                            "formDefId": "gridadv"
+                        }
+                    },
+                    "uniqueKey": "",
+                    "validateMaxRow": "",
+                    "validateMinRow": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    }
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section4",
+            "label": "Advanced Grid",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "featureAdvancedGrid",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Feature - Advanced Grid",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t4"
+    }
+}

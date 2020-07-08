@@ -1,0 +1,2778 @@
+<appDefinition>
+   <id>jshowcasedx</id>
+   <version></version>
+   <name>DX Showcase</name>
+   <packageDefinitionList>
+      <packageDefinition>
+         <appId>jshowcasedx</appId>
+         <id>jshowcasedx</id>
+         <name>DX Showcase</name>
+         <packageActivityFormMap>
+            <entry>
+               <string>process1::resubmit</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>resubmit</activityDefId>
+                  <formId>processRequestResubmit</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process1::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>processRequest</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process1::approver1</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>approver1</activityDefId>
+                  <formId>processApprove1</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process1::approver2</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>approver2</activityDefId>
+                  <formId>processApprove2</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+         </packageActivityFormMap>
+         <packageActivityPluginMap>
+            <entry>
+               <string>process1::email4</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>email4</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;requester&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Approver 2 has #form.j_sc_tran.approvalStatus2# your request no. #form.j_sc_tran.rcounter#&quot;,&quot;message&quot;:&quot;Hi\n\nApprover 2 has #form.j_sc_tran.approvalStatus2# your request no. #form.j_sc_tran.rcounter#.\n\nThis is a computer generated email.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;security&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;%%%%7nnKit5cIYtIIVsUnFoA/g==%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>process1::email2</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>email2</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;requester&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Approver requires you to resubmit the request no. #form.j_sc_tran.rcounter#&quot;,&quot;message&quot;:&quot;Dear #form.j_sc_tran.createdByName#\n\nApprover requires you to resubmit the request no. #form.j_sc_tran.rcounter#.\n\nThis is a computer generated email.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;security&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;%%%%1TXinFZ220IcVd9XX2AobA==%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>process1::tool6</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>tool6</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;requester&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Approver 1 has #form.j_sc_tran.approvalStatus1# your request no. #form.j_sc_tran.rcounter#&quot;,&quot;message&quot;:&quot;Dear #form.j_sc_tran.createdByName#\n\nApprover 1 has #form.j_sc_tran.approvalStatus1# your request no. #form.j_sc_tran.rcounter#.\n\nThis is a computer generated email.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;security&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;%%%%ylIi7Pfh+qrbz/6bGGpKDA==%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>process1::email3</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>email3</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;approver2&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Requester #form.j_sc_tran.createdByName# has submitted a request no. #form.j_sc_tran.rcounter# for approval&quot;,&quot;message&quot;:&quot;Hi\n\nRequester #form.j_sc_tran.createdByName# has submitted a request no. #form.j_sc_tran.rcounter# for approval.\n\nThis is a computer generated email.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;security&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;%%%%m9wNN55WcVA3N512guvx3w==%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>process1::tool5</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>tool5</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.FormDataUpdateTool</pluginName>
+                  <pluginProperties>{&quot;formDefId&quot;:&quot;processRequest&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;approvalStatus2&quot;,&quot;value&quot;:&quot;Cancelled&quot;}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>populateChart2::populateDataChart2</string>
+               <packageActivityPlugin>
+                  <processDefId>populateChart2</processDefId>
+                  <activityDefId>populateDataChart2</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.PresetFormDataTool</pluginName>
+                  <pluginProperties>{&quot;formDefId&quot;:&quot;chartData&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;id&quot;},{&quot;field&quot;:&quot;parameter1&quot;},{&quot;field&quot;:&quot;parameter2&quot;},{&quot;field&quot;:&quot;parameter3&quot;},{&quot;field&quot;:&quot;value&quot;}],&quot;data&quot;:&quot;0015,Infrastructure As A Service,Amazon Web Services,,28\n0016,Infrastructure As A Service,Google,,5\n0017,Infrastructure As A Service,IBM,,7\n0018,Infrastructure As A Service,Microsoft,,10\n0019,Infrastructure As A Service,Other,,43\n0020,Infrastructure As A Service,Rackspace,,3\n0021,Infrastructure As A Service,Salesforce,,4&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>populateChart2::populateMeetingData</string>
+               <packageActivityPlugin>
+                  <processDefId>populateChart2</processDefId>
+                  <activityDefId>populateMeetingData</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.PresetFormDataTool</pluginName>
+                  <pluginProperties>{&quot;formDefId&quot;:&quot;calendarMeeting&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;id&quot;},{&quot;field&quot;:&quot;date&quot;},{&quot;field&quot;:&quot;name&quot;}],&quot;data&quot;:&quot;001,2019-05-05,Meeting\n009,2019-05-07,Meeting\n002,2019-05-10,Meeting\n010,2019-05-13,Meeting\n003,2019-05-15,Meeting\n011,2019-05-16,Meeting\n004,2019-05-20,Meeting\n012,2019-05-30,Meeting\n005,2019-02-05,Meeting\n006,2019-02-10,Meeting\n007,2019-02-15,Meeting\n008,2019-02-20,Meeting&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>process1::email1</string>
+               <packageActivityPlugin>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>email1</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;approver1&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Requester #form.j_sc_tran.createdByName# has submitted a request no. #form.j_sc_tran.rcounter# for approval&quot;,&quot;message&quot;:&quot;Hi\n\nRequester #form.j_sc_tran.createdByName# has submitted a request no. #form.j_sc_tran.rcounter# for approval.\n\nThis is a computer generated email.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;security&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;%%%%fVElXdcF85a3J/rWmyyqBQ==%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>populateChart2::tool2</string>
+               <packageActivityPlugin>
+                  <processDefId>populateChart2</processDefId>
+                  <activityDefId>tool2</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.PresetFormDataTool</pluginName>
+                  <pluginProperties>{&quot;formDefId&quot;:&quot;candleStick&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;id&quot;},{&quot;field&quot;:&quot;Open&quot;},{&quot;field&quot;:&quot;Lowest&quot;},{&quot;field&quot;:&quot;Highest&quot;},{&quot;field&quot;:&quot;Closing&quot;},{&quot;field&quot;:&quot;Date&quot;},{&quot;field&quot;:&quot;StockCode&quot;}],&quot;data&quot;:&quot;001,26.24,25.80,26.42,25.95,2015\/11\/01,ABCD\n002,26.40,26.18,26.46,26.20,2015\/11\/02,ABCD\n003,26.37,26.04,26.41,26.08,2015\/11\/03,ABCD\n004,26.78,26.15,26.90,26.16,2015\/11\/04,ABCD\n005,26.86,26.51,26.99,26.58,2015\/11\/05,ABCD\n006,26.95,26.50,27.11,26.55,2015\/11\/06,ABCD\n007,27.06,26.50,26.84,26.77,2015\/11\/07,ABCD\n008,26.86,26.43,26.83,26.59,2015\/11\/08,ABCD\n009,27.10,26.52,26.98,26.59,2015\/11\/09,ABCD\n010,27.21,26.99,27.33,27.06,2015\/11\/10,ABCD\n011,27.37,26.91,27.17,27.21,2015\/11\/11,ABCD\n012,27.07,26.60,27.15,27.02,2015\/11\/12,ABCD\n013,27.33,26.95,27.24,26.96,2015\/11\/13,ABCD\n014,27.27,26.95,27.41,27.23,2015\/11\/14,ABCD\n015,27.81,27.07,27.86,27.25,2015\/11\/15,ABCD\n016,27.94,27.29,28.00,27.50,2015\/11\/16,ABCD\n017,28.26,27.91,28.39,27.97,2015\/11\/17,ABCD\n018,28.34,28.05,28.30,28.28,2015\/11\/18,ABCD\n019,28.34,27.79,28.49,27.90,2015\/11\/19,ABCD\n020,27.84,27.71,27.90,27.77,2015\/11\/20,ABCD&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+         </packageActivityPluginMap>
+         <packageParticipantMap>
+            <entry>
+               <string>process1::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process1::approver1</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>approver1</participantId>
+                  <type>workflowVariable</type>
+                  <value>approverUsername1,user</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process1::approver2</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>approver2</participantId>
+                  <type>workflowVariable</type>
+                  <value>approverUsername2,user</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process1::requester</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>requester</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>populateChart2::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>populateChart2</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+         </packageParticipantMap>
+      </packageDefinition>
+   </packageDefinitionList>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList/>
+   <messageList>
+      <message>
+         <id> Joget Academy_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey> Joget Academy</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 学院</message>
+      </message>
+      <message>
+         <id>#i18n.Standard Fields#_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>#i18n.Standard Fields#</messageKey>
+         <locale>zh_CN</locale>
+         <message>标准元素</message>
+      </message>
+      <message>
+         <id>#i18n.Submit a new reques label#_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>#i18n.Submit a new reques label#</messageKey>
+         <locale>en_US</locale>
+         <message>Submit a new request</message>
+      </message>
+      <message>
+         <id>#i18n.Submit a new reques label#_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>#i18n.Submit a new reques label#</messageKey>
+         <locale>zh_CN</locale>
+         <message>新建申请</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-align-justify&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Miscellaneous Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-align-justify&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Miscellaneous Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-align-justify&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 特殊元素</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-align-justify&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Standard Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-align-justify&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Standard Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-align-justify&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 标准元素</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Reason if rejected / resubmit_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Reason if rejected / resubmit</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 拒绝/重新提交原因</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Status_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Status</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 状态</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-bar-chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Showcase Charts_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-bar-chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Showcase Charts</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-bar-chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 图表展示</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-bolt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Approver has requested you to resubmit request no. #form.j_sc_tran.rcounter#_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-bolt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Approver has requested you to resubmit request no. #form.j_sc_tran.rcounter#</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-bolt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 审批人要求您重提交编号为#form.j_sc_tran.rcounter#的申请</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Date &amp; Time Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Date &amp; Time Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 日期&amp;时间元素</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-check-square-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Selection Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-check-square-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Selection Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-check-square-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 选择元素</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-folder-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Request Details_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-folder-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Request Details</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-folder-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 申请明细</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-inbox&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Approver 1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-inbox&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Approver 1</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-inbox&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 审批人1</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Info_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Info</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 信息</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-line-chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Application Performance Management_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-line-chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Application Performance Management</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-line-chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 应用性能管理</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Request &amp; Approver Workflow_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Request &amp; Approver Workflow</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 请求&amp;审批流程</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Showcase Form_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Showcase Form</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 表单展示</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Showcase Userview_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Showcase Userview</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-list-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 用户界面展示</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-tachometer&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Dashboard_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-tachometer&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Dashboard</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-tachometer&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 仪表板</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; File Uploads_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; File Uploads</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 文件上传</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Image Uploads_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Image Uploads</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 图片上传</message>
+      </message>
+      <message>
+         <id>&lt;i class=&quot;fa fa-wpforms&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Request Form_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&lt;i class=&quot;fa fa-wpforms&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Request Form</messageKey>
+         <locale>zh_CN</locale>
+         <message>&lt;i class=&quot;fa fa-wpforms&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 申请表单</message>
+      </message>
+      <message>
+         <id>&gt;Form Grid_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>&gt;Form Grid</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单表格</message>
+      </message>
+      <message>
+         <id>About_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>About</messageKey>
+         <locale>zh_CN</locale>
+         <message>关于</message>
+      </message>
+      <message>
+         <id>Advanced Grid_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Advanced Grid</messageKey>
+         <locale>zh_CN</locale>
+         <message>高级表格</message>
+      </message>
+      <message>
+         <id>Approval Status 1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approval Status 1</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批状态1</message>
+      </message>
+      <message>
+         <id>Approval Status 2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approval Status 2</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批状态2</message>
+      </message>
+      <message>
+         <id>Approved_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approved</messageKey>
+         <locale>zh_CN</locale>
+         <message>已审批</message>
+      </message>
+      <message>
+         <id>Approver 1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver 1</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批人1</message>
+      </message>
+      <message>
+         <id>Approver 2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver 2</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批人2</message>
+      </message>
+      <message>
+         <id>Approver has requested you to resubmit request no_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver has requested you to resubmit request no</messageKey>
+         <locale>en_US</locale>
+         <message>Approver has requested you to resubmit request no</message>
+      </message>
+      <message>
+         <id>Approver has requested you to resubmit request no_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver has requested you to resubmit request no</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批者已要求您重新提交请求</message>
+      </message>
+      <message>
+         <id>Approver has requested you to resubmit request_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver has requested you to resubmit request</messageKey>
+         <locale>en_US</locale>
+         <message>Approver has requested you to resubmit request</message>
+      </message>
+      <message>
+         <id>Approver has requested you to resubmit request_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver has requested you to resubmit request</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批者已要求您重新提交请求</message>
+      </message>
+      <message>
+         <id>Approver Inbox_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Approver Inbox</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批任务</message>
+      </message>
+      <message>
+         <id>appVersion_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>appVersion</messageKey>
+         <locale>en_US</locale>
+      </message>
+      <message>
+         <id>appVersion_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>appVersion</messageKey>
+         <locale>zh_CN</locale>
+         <message>7.0.0</message>
+      </message>
+      <message>
+         <id>Area Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>Area Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意: 图表数据是来自Joget系统表的真实值。</message>
+      </message>
+      <message>
+         <id>Area Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Area Chart: Total Number of Forms &amp; Datalists in Apps</message>
+      </message>
+      <message>
+         <id>Area Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>面积图: 表单和列表在APP中各自的总数</message>
+      </message>
+      <message>
+         <id>Area Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>App Name</message>
+      </message>
+      <message>
+         <id>Area Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>应用名称</message>
+      </message>
+      <message>
+         <id>Area Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Total Forms</message>
+      </message>
+      <message>
+         <id>Area Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单总数</message>
+      </message>
+      <message>
+         <id>Area Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>面积图</message>
+      </message>
+      <message>
+         <id>Area Chart: Total Number of Forms &amp; Datalists in Apps_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Area Chart: Total Number of Forms &amp; Datalists in Apps</messageKey>
+         <locale>zh_CN</locale>
+         <message>面积图:应用中的表单和列表总数</message>
+      </message>
+      <message>
+         <id>Bar Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Fictitious data for illustration purposes only.</message>
+      </message>
+      <message>
+         <id>Bar Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注: 虚构的数据仅供说明之用。</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意: 图表数据是来自Joget系统表的真实值。</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked Title</messageKey>
+         <locale>en_US</locale>
+         <message>Bar Chart, Stacked: Total Forms, Datalist &amp; Userview in Apps</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>竖向柱状图: 表单,列表和用户视图各自的总数</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked X</messageKey>
+         <locale>en_US</locale>
+         <message>App Name</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked X</messageKey>
+         <locale>zh_CN</locale>
+         <message>应用名称</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked Y</messageKey>
+         <locale>en_US</locale>
+         <message>Total Forms In App</message>
+      </message>
+      <message>
+         <id>Bar Chart Stacked Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Stacked Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单总数</message>
+      </message>
+      <message>
+         <id>Bar Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Bar Chart: Global Market Share Of Cloud Infrastructure Services By Vendor</message>
+      </message>
+      <message>
+         <id>Bar Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>横向柱状图: 按供应商划分的云基础设施服务的全球市场份额</message>
+      </message>
+      <message>
+         <id>Bar Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>Infrastructure Provider</message>
+      </message>
+      <message>
+         <id>Bar Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>基础设施提供商</message>
+      </message>
+      <message>
+         <id>Bar Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Total Market Share</message>
+      </message>
+      <message>
+         <id>Bar Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>总市场份额</message>
+      </message>
+      <message>
+         <id>Bar Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>横向柱状图</message>
+      </message>
+      <message>
+         <id>Bar Chart, Stacked_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart, Stacked</messageKey>
+         <locale>zh_CN</locale>
+         <message>竖向柱状图</message>
+      </message>
+      <message>
+         <id>Bar Chart, Stacked: Total Forms, Datalist &amp; Userview in Apps_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart, Stacked: Total Forms, Datalist &amp; Userview in Apps</messageKey>
+         <locale>zh_CN</locale>
+         <message>柱状图:应用中的表单,列表和用户界面总数</message>
+      </message>
+      <message>
+         <id>Bar Chart: Global Market Share Of Cloud Infrastructure Services By Vendor_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bar Chart: Global Market Share Of Cloud Infrastructure Services By Vendor</messageKey>
+         <locale>zh_CN</locale>
+         <message>柱状图:按供应商划分的云基础设施服务的全球市场份额</message>
+      </message>
+      <message>
+         <id>Bubble Chart Link_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Link</messageKey>
+         <locale>en_US</locale>
+         <message>How to read a bubble chart</message>
+      </message>
+      <message>
+         <id>Bubble Chart Link_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Link</messageKey>
+         <locale>zh_CN</locale>
+         <message>如何阅读气泡图</message>
+      </message>
+      <message>
+         <id>Bubble Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>Bubble Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意: 图表数据是来自Joget系统表的真实值</message>
+      </message>
+      <message>
+         <id>Bubble Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Bubble Chart: Total Forms, Datalist &amp; Userview In App</message>
+      </message>
+      <message>
+         <id>Bubble Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>气泡图: 表单,列表和界面在APP中各自的总数</message>
+      </message>
+      <message>
+         <id>Bubble Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>Total Number Of Forms</message>
+      </message>
+      <message>
+         <id>Bubble Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单总数</message>
+      </message>
+      <message>
+         <id>Bubble Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Total Number Of Datalists</message>
+      </message>
+      <message>
+         <id>Bubble Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>列表总数</message>
+      </message>
+      <message>
+         <id>Bubble Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>气泡图</message>
+      </message>
+      <message>
+         <id>Bubble Chart: Total Forms, Datalist &amp; Userview In App_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Bubble Chart: Total Forms, Datalist &amp; Userview In App</messageKey>
+         <locale>zh_CN</locale>
+         <message>气泡图:应用中的表单,列表和用户界面总数</message>
+      </message>
+      <message>
+         <id>Calculation&lt;br/&gt;(Numeric1 * Numeric2)_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Calculation&lt;br/&gt;(Numeric1 * Numeric2)</messageKey>
+         <locale>zh_CN</locale>
+         <message>计算结果&lt;br/&gt;(数值1* 数值2)</message>
+      </message>
+      <message>
+         <id>Calendar - Meeting_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Calendar - Meeting</messageKey>
+         <locale>zh_CN</locale>
+         <message>日历 - 会议</message>
+      </message>
+      <message>
+         <id>Calendar View_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Calendar View</messageKey>
+         <locale>zh_CN</locale>
+         <message>日历界面</message>
+      </message>
+      <message>
+         <id>Candlestick First Name_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Candlestick First Name</messageKey>
+         <locale>en_US</locale>
+         <message>First Name</message>
+      </message>
+      <message>
+         <id>Candlestick First Name_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Candlestick First Name</messageKey>
+         <locale>zh_CN</locale>
+         <message>姓</message>
+      </message>
+      <message>
+         <id>Candlestick Form_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Candlestick Form</messageKey>
+         <locale>zh_CN</locale>
+         <message>烛台图表单</message>
+      </message>
+      <message>
+         <id>Candlestick Username_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Candlestick Username</messageKey>
+         <locale>en_US</locale>
+         <message>Username</message>
+      </message>
+      <message>
+         <id>Candlestick Username_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Candlestick Username</messageKey>
+         <locale>zh_CN</locale>
+         <message>名字</message>
+      </message>
+      <message>
+         <id>Chart Data_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Data</messageKey>
+         <locale>zh_CN</locale>
+         <message>标准图表数据</message>
+      </message>
+      <message>
+         <id>Chart Document Line1_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line1</messageKey>
+         <locale>en_US</locale>
+         <message>This is a showcases of the various types of graphic charts that are available in Joget Enterprise/Professional DX.</message>
+      </message>
+      <message>
+         <id>Chart Document Line1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line1</messageKey>
+         <locale>zh_CN</locale>
+         <message>这是在中可用的各种类型的图形图表的展示。</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List1_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List1</messageKey>
+         <locale>en_US</locale>
+         <message>Uses SQL query commands to retrieve and populate the chart.</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List1</messageKey>
+         <locale>zh_CN</locale>
+         <message>使用SQL查询命令检索和填充图表。</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List2_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List2</messageKey>
+         <locale>en_US</locale>
+         <message>You can define the height, width and color of the rendered chart.</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List2</messageKey>
+         <locale>zh_CN</locale>
+         <message>可以定义呈现的图表的高度、宽度和颜色。</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List3_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List3</messageKey>
+         <locale>en_US</locale>
+         <message>If you choose bar chart, you can specify to render in horizontal or vertical orientation.</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List3_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List3</messageKey>
+         <locale>zh_CN</locale>
+         <message>如果选择柱状图，可以指定以水平或垂直方向呈现</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List4_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List4</messageKey>
+         <locale>en_US</locale>
+         <message>In additional, bar charts allow you to display stack elements.</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List4_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List4</messageKey>
+         <locale>zh_CN</locale>
+         <message>另外，柱状图允许显示堆栈元素。</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List5_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List5</messageKey>
+         <locale>en_US</locale>
+         <message>All charts allow you to key in additional text above and below the chart. This app used the bottom footer to provide additional description about the chart.</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List5_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List5</messageKey>
+         <locale>zh_CN</locale>
+         <message>所有的图表都允许你在图表上方和下方键入额外的文字。这个应用程序使用底部的页脚来提供关于图表的额外描述。</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List6_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List6</messageKey>
+         <locale>en_US</locale>
+         <message>Finally, you decide the source of the data (Datasource) or database to &apos;pull&apos; your data from. It can be an external database outside of Joget.
+</message>
+      </message>
+      <message>
+         <id>Chart Document Line2 List6_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2 List6</messageKey>
+         <locale>zh_CN</locale>
+         <message>最后，您决定从数据的来源(数据源)或数据库“拉”数据。它可以是Joget之外的外部数据库。</message>
+      </message>
+      <message>
+         <id>Chart Document Line2_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2</messageKey>
+         <locale>en_US</locale>
+         <message>The following are features of Joget Charts:</message>
+      </message>
+      <message>
+         <id>Chart Document Line2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line2</messageKey>
+         <locale>zh_CN</locale>
+         <message>以下是Joget图表的特性:</message>
+      </message>
+      <message>
+         <id>Chart Document Line3 After Link_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line3 After Link</messageKey>
+         <locale>en_US</locale>
+         <message>. To view the chart properties, edit the userview and hover over the chart menu until you see the properties link. Click on the properties link and study the respective chart properties tabs. </message>
+      </message>
+      <message>
+         <id>Chart Document Line3 After Link_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line3 After Link</messageKey>
+         <locale>zh_CN</locale>
+         <message>. To view the chart properties, edit the userview and hover over the chart menu until you see the properties link. Click on the properties link and study the respective chart properties tabs. </message>
+      </message>
+      <message>
+         <id>Chart Document Line3 Before Link_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line3 Before Link</messageKey>
+         <locale>en_US</locale>
+         <message>You can learn how the app generated the charts in</message>
+      </message>
+      <message>
+         <id>Chart Document Line3 Before Link_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line3 Before Link</messageKey>
+         <locale>zh_CN</locale>
+         <message>你可以学习如何在 用户视图生成图表。要查看图表属性，编辑用户视图并将鼠标悬停在图表菜单上，直到您看到属性链接。单击属性链接并研究相应的图表属性选项卡。</message>
+      </message>
+      <message>
+         <id>Chart Document Line3 Link_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line3 Link</messageKey>
+         <locale>en_US</locale>
+         <message>userview</message>
+      </message>
+      <message>
+         <id>Chart Document Line3 Link_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line3 Link</messageKey>
+         <locale>zh_CN</locale>
+         <message>userview</message>
+      </message>
+      <message>
+         <id>Chart Document Line4_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Line4</messageKey>
+         <locale>en_US</locale>
+         <message>Joget Charts Type</message>
+      </message>
+      <message>
+         <id>Chart Document List_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document List</messageKey>
+         <locale>en_US</locale>
+         <message>The following are features of Joget Charts:
+
+Uses SQL query commands to retrieve and populate the chart.
+You can define the height, width and color of the rendered chart.
+If you choose bar chart, you can specify to render in horizontal or vertical orientation.
+In additional, bar charts allow you to display stack elements.
+All charts allow you to key in additional text above and below the chart. This app used the bottom footer to provide additional description about the chart.
+Finally, you decide the source of the data (Datasource) or database to &apos;pull&apos; your data from. It can be an external database outside of Joget.</message>
+      </message>
+      <message>
+         <id>Chart Document List_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document List</messageKey>
+         <locale>zh_CN</locale>
+         <message>The following are features of Joget Charts:
+
+Uses SQL query commands to retrieve and populate the chart.
+You can define the height, width and color of the rendered chart.
+If you choose bar chart, you can specify to render in horizontal or vertical orientation.
+In additional, bar charts allow you to display stack elements.
+All charts allow you to key in additional text above and below the chart. This app used the bottom footer to provide additional description about the chart.
+Finally, you decide the source of the data (Datasource) or database to &apos;pull&apos; your data from. It can be an external database outside of Joget.</message>
+      </message>
+      <message>
+         <id>Chart Document Table Bar Chart Desc_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table Bar Chart Desc</messageKey>
+         <locale>en_US</locale>
+         <message>A bar chart is a diagram in which the numerical values of variables are represented by the height or length of lines or rectangles of equal width.</message>
+      </message>
+      <message>
+         <id>Chart Document Table Bar Chart View_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table Bar Chart View</messageKey>
+         <locale>en_US</locale>
+         <message>View bar chart&amp;nbsp;&lt;a href=&apos; bar&apos; &gt;1&lt;/a&gt;&amp;nbsp;&amp;amp;&amp;nbsp;&lt;a href=&apos; barstack&apos; &gt;2&lt;/a&gt;</message>
+      </message>
+      <message>
+         <id>Chart Document Table Bar Chart_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table Bar Chart</messageKey>
+         <locale>en_US</locale>
+         <message>Bar Chart</message>
+      </message>
+      <message>
+         <id>Chart Document Table Bubble Chart Desc_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table Bubble Chart Desc</messageKey>
+         <locale>en_US</locale>
+         <message>&lt;span data-mce-mark=&apos; 1&apos; &gt;A&amp;nbsp;&lt;/span&gt;bubble chart&lt;span data-mce-mark=&apos; 1&apos; &gt;&amp;nbsp;is a type of&amp;nbsp;&lt;/span&gt;chart&lt;span data-mce-mark=&apos; 1&apos; &gt;&amp;nbsp;that displays three dimensions of data.Each entity with its triplet (v&lt;/span&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;span data-mce-mark=&apos; 1&apos; &gt;, v&lt;/span&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;span data-mce-mark=&apos; 1&apos; &gt;, v&lt;/span&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;span data-mce-mark=&apos; 1&apos; &gt;) of associated data is plotted as a disk that expresses two of the v&lt;/span&gt;&lt;sub&gt;i&lt;/sub&gt;&lt;span data-mce-mark=&apos; 1&apos; &gt;&amp;nbsp;values through the disk&apos;s xy location and the third through its circle size.&lt;/span&gt;</message>
+      </message>
+      <message>
+         <id>Chart Document Table Bubble Chart View_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table Bubble Chart View</messageKey>
+         <locale>en_US</locale>
+         <message>View bubble chart</message>
+      </message>
+      <message>
+         <id>Chart Document Table Bubble Chart_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table Bubble Chart</messageKey>
+         <locale>en_US</locale>
+         <message>Bubble Chart</message>
+      </message>
+      <message>
+         <id>Chart Document Table TH1_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table TH1</messageKey>
+         <locale>en_US</locale>
+         <message>Type</message>
+      </message>
+      <message>
+         <id>Chart Document Table TH2_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table TH2</messageKey>
+         <locale>en_US</locale>
+         <message>Description</message>
+      </message>
+      <message>
+         <id>Chart Document Table TH3_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Chart Document Table TH3</messageKey>
+         <locale>en_US</locale>
+         <message>View</message>
+      </message>
+      <message>
+         <id>Check Box_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Check Box</messageKey>
+         <locale>zh_CN</locale>
+         <message>复选框</message>
+      </message>
+      <message>
+         <id>Click to edit. Tab to save_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Click to edit. Tab to save</messageKey>
+         <locale>zh_CN</locale>
+         <message>点击编辑. Tab保存</message>
+      </message>
+      <message>
+         <id>Closing Price $_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Closing Price $</messageKey>
+         <locale>zh_CN</locale>
+         <message>收盘价格</message>
+      </message>
+      <message>
+         <id>Counter_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Counter</messageKey>
+         <locale>zh_CN</locale>
+         <message>编号</message>
+      </message>
+      <message>
+         <id>Created_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Created</messageKey>
+         <locale>zh_CN</locale>
+         <message>创建时间</message>
+      </message>
+      <message>
+         <id>Date (Next Month)_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Date (Next Month)</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期 (下个月)</message>
+      </message>
+      <message>
+         <id>Date (Next Year)_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Date (Next Year)</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期 (明年)</message>
+      </message>
+      <message>
+         <id>Date (Tomorrow)_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Date (Tomorrow)</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期 (明天)</message>
+      </message>
+      <message>
+         <id>Date &amp; Time_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Date &amp; Time</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期时间</message>
+      </message>
+      <message>
+         <id>Date Time Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Date Time Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期时间</message>
+      </message>
+      <message>
+         <id>Date_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Date</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期</message>
+      </message>
+      <message>
+         <id>Documentation_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Documentation</messageKey>
+         <locale>zh_CN</locale>
+         <message>文档</message>
+      </message>
+      <message>
+         <id>Donut Chart Inner Ring_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Inner Ring</messageKey>
+         <locale>en_US</locale>
+         <message>Total number of datalist represented by the inner ring.</message>
+      </message>
+      <message>
+         <id>Donut Chart Inner Ring_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Inner Ring</messageKey>
+         <locale>zh_CN</locale>
+         <message>由内环表示的形式的总数。</message>
+      </message>
+      <message>
+         <id>Donut Chart Legend_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Legend</messageKey>
+         <locale>en_US</locale>
+         <message>Legend</message>
+      </message>
+      <message>
+         <id>Donut Chart Legend_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Legend</messageKey>
+         <locale>zh_CN</locale>
+         <message>说明</message>
+      </message>
+      <message>
+         <id>Donut Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>Donut Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意:图表数据是来自Joget系统表的真实值。</message>
+      </message>
+      <message>
+         <id>Donut Chart Outer Ring_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Outer Ring</messageKey>
+         <locale>en_US</locale>
+         <message>Total number of forms represented by the outer ring.</message>
+      </message>
+      <message>
+         <id>Donut Chart Outer Ring_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Outer Ring</messageKey>
+         <locale>zh_CN</locale>
+         <message>由外环表示的形式的总数。</message>
+      </message>
+      <message>
+         <id>Donut Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Donut Chart: Total Forms &amp; List In Apps</message>
+      </message>
+      <message>
+         <id>Donut Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>圆环图 表单和列表在APP中各自的总数</message>
+      </message>
+      <message>
+         <id>Donut Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>圆环图</message>
+      </message>
+      <message>
+         <id>Donut Chart: Total Forms &amp; List In Apps_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Donut Chart: Total Forms &amp; List In Apps</messageKey>
+         <locale>zh_CN</locale>
+         <message>圆环图:应用中的表单和列表总数</message>
+      </message>
+      <message>
+         <id>ecounter_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>ecounter</messageKey>
+         <locale>zh_CN</locale>
+         <message>计算器</message>
+      </message>
+      <message>
+         <id>File &amp; Image Upload Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>File &amp; Image Upload Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>文件&amp;图片上传</message>
+      </message>
+      <message>
+         <id>File &amp; Image Upload_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>File &amp; Image Upload</messageKey>
+         <locale>zh_CN</locale>
+         <message>文件&amp;图片上传</message>
+      </message>
+      <message>
+         <id>File Upload (Allows multiple files)_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>File Upload (Allows multiple files)</messageKey>
+         <locale>zh_CN</locale>
+         <message>文件上传 (支持多文件)</message>
+      </message>
+      <message>
+         <id>File Upload_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>File Upload</messageKey>
+         <locale>zh_CN</locale>
+         <message>文件上传</message>
+      </message>
+      <message>
+         <id>File_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>File</messageKey>
+         <locale>en_US</locale>
+         <message>File</message>
+      </message>
+      <message>
+         <id>File_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>File</messageKey>
+         <locale>zh_CN</locale>
+         <message>文件</message>
+      </message>
+      <message>
+         <id>First Name_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>First Name</messageKey>
+         <locale>zh_CN</locale>
+         <message>名字</message>
+      </message>
+      <message>
+         <id>firstName_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>firstName</messageKey>
+         <locale>zh_CN</locale>
+         <message>名</message>
+      </message>
+      <message>
+         <id>Form Grid_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Form Grid</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单表格</message>
+      </message>
+      <message>
+         <id>Grid_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Grid</messageKey>
+         <locale>zh_CN</locale>
+         <message>表格</message>
+      </message>
+      <message>
+         <id>Grids_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Grids</messageKey>
+         <locale>en_US</locale>
+      </message>
+      <message>
+         <id>Grids_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Grids</messageKey>
+         <locale>zh_CN</locale>
+         <message>其他表格</message>
+      </message>
+      <message>
+         <id>Highest Price $_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Highest Price $</messageKey>
+         <locale>zh_CN</locale>
+         <message>最高价格</message>
+      </message>
+      <message>
+         <id>Hyperlink_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Hyperlink</messageKey>
+         <locale>zh_CN</locale>
+         <message>超链接</message>
+      </message>
+      <message>
+         <id>ID_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>ID</messageKey>
+         <locale>zh_CN</locale>
+         <message>ID</message>
+      </message>
+      <message>
+         <id>Image Upload (Allows multiple files)_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Image Upload (Allows multiple files)</messageKey>
+         <locale>zh_CN</locale>
+         <message>图片上传 (支持多图片)</message>
+      </message>
+      <message>
+         <id>Image Upload Fields_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Image Upload Fields</messageKey>
+         <locale>en_US</locale>
+      </message>
+      <message>
+         <id>Image Upload Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Image Upload Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>图片上传</message>
+      </message>
+      <message>
+         <id>Image Upload_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Image Upload</messageKey>
+         <locale>zh_CN</locale>
+         <message>图片上传</message>
+      </message>
+      <message>
+         <id>Image Uploads_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Image Uploads</messageKey>
+         <locale>en_US</locale>
+      </message>
+      <message>
+         <id>Image Uploads_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Image Uploads</messageKey>
+         <locale>zh_CN</locale>
+         <message>图片上传</message>
+      </message>
+      <message>
+         <id>Input your stock information here_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Input your stock information here</messageKey>
+         <locale>zh_CN</locale>
+         <message>在此输入您的股票信息</message>
+      </message>
+      <message>
+         <id>Joget Academy_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Academy</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 学院</message>
+      </message>
+      <message>
+         <id>Joget Answers_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Answers</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 疑问解答</message>
+      </message>
+      <message>
+         <id>Joget Apps Marketplace_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Apps Marketplace</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 应用市场</message>
+      </message>
+      <message>
+         <id>Joget Blog_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Blog</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 博客</message>
+      </message>
+      <message>
+         <id>Joget Cloud_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Cloud</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 云</message>
+      </message>
+      <message>
+         <id>Joget Dashboard_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Dashboard</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 仪表板</message>
+      </message>
+      <message>
+         <id>Joget Downloads_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Downloads</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 下载</message>
+      </message>
+      <message>
+         <id>Joget DX Showcase_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget DX Showcase</messageKey>
+         <locale>en_US</locale>
+         <message>Joget DX Showcase</message>
+      </message>
+      <message>
+         <id>Joget DX Showcase_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget DX Showcase</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget DX 功能演示</message>
+      </message>
+      <message>
+         <id>Joget Home_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Home</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 首页</message>
+      </message>
+      <message>
+         <id>Joget Knowledge Base_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Knowledge Base</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 基础知识</message>
+      </message>
+      <message>
+         <id>Joget Mobile Android App_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Mobile Android App</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 安卓应用</message>
+      </message>
+      <message>
+         <id>Joget Mobile iOS App_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Mobile iOS App</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 苹果应用</message>
+      </message>
+      <message>
+         <id>Joget Open Source Repository_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Open Source Repository</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 开源仓库</message>
+      </message>
+      <message>
+         <id>Joget Resources_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Resources</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget资源</message>
+      </message>
+      <message>
+         <id>Joget Translations_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Translations</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 翻译</message>
+      </message>
+      <message>
+         <id>Joget Videos_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Joget Videos</messageKey>
+         <locale>zh_CN</locale>
+         <message>Joget 视频</message>
+      </message>
+      <message>
+         <id>Last Name_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Last Name</messageKey>
+         <locale>zh_CN</locale>
+         <message>姓</message>
+      </message>
+      <message>
+         <id>lastName_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>lastName</messageKey>
+         <locale>zh_CN</locale>
+         <message>姓</message>
+      </message>
+      <message>
+         <id>Line Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>Line Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意: 图表数据是来自Joget系统表的真实值。</message>
+      </message>
+      <message>
+         <id>Line Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Line Chart: Total Number of Forms in Apps</message>
+      </message>
+      <message>
+         <id>Line Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>曲线图: 表单在APP中的总数</message>
+      </message>
+      <message>
+         <id>Line Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>App Name</message>
+      </message>
+      <message>
+         <id>Line Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>应用名称</message>
+      </message>
+      <message>
+         <id>Line Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Total Forms In App</message>
+      </message>
+      <message>
+         <id>Line Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单总数</message>
+      </message>
+      <message>
+         <id>Line Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>曲线图</message>
+      </message>
+      <message>
+         <id>Line Chart: Total Number of Forms in Apps_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Line Chart: Total Number of Forms in Apps</messageKey>
+         <locale>zh_CN</locale>
+         <message>曲线图:应用中的表单总数</message>
+      </message>
+      <message>
+         <id>List Grid_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>List Grid</messageKey>
+         <locale>zh_CN</locale>
+         <message>列表表格</message>
+      </message>
+      <message>
+         <id>List Grids_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>List Grids</messageKey>
+         <locale>zh_CN</locale>
+         <message>列表表格</message>
+      </message>
+      <message>
+         <id>Lowest Price $_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Lowest Price $</messageKey>
+         <locale>zh_CN</locale>
+         <message>最低价格</message>
+      </message>
+      <message>
+         <id>Manage Meeting_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Manage Meeting</messageKey>
+         <locale>zh_CN</locale>
+         <message>会议管理</message>
+      </message>
+      <message>
+         <id>Meeting Name_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Meeting Name</messageKey>
+         <locale>zh_CN</locale>
+         <message>会议名称</message>
+      </message>
+      <message>
+         <id>Misc Field_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Misc Field</messageKey>
+         <locale>zh_CN</locale>
+         <message>特殊元素</message>
+      </message>
+      <message>
+         <id>Multi Select Box_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Multi Select Box</messageKey>
+         <locale>zh_CN</locale>
+         <message>自动补全选择</message>
+      </message>
+      <message>
+         <id>My Inbox_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>My Inbox</messageKey>
+         <locale>zh_CN</locale>
+         <message>我的任务</message>
+      </message>
+      <message>
+         <id>My Requests_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>My Requests</messageKey>
+         <locale>zh_CN</locale>
+         <message>我的申请</message>
+      </message>
+      <message>
+         <id>Name_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Name</messageKey>
+         <locale>zh_CN</locale>
+         <message>姓名</message>
+      </message>
+      <message>
+         <id>New Category_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>New Category</messageKey>
+         <locale>zh_CN</locale>
+         <message>新建分类</message>
+      </message>
+      <message>
+         <id>New_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>New</messageKey>
+         <locale>zh_CN</locale>
+         <message>新建</message>
+      </message>
+      <message>
+         <id>Numeric1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Numeric1</messageKey>
+         <locale>zh_CN</locale>
+         <message>数值1</message>
+      </message>
+      <message>
+         <id>Numeric2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Numeric2</messageKey>
+         <locale>zh_CN</locale>
+         <message>数值2</message>
+      </message>
+      <message>
+         <id>Numerical Value_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Numerical Value</messageKey>
+         <locale>zh_CN</locale>
+         <message>数值</message>
+      </message>
+      <message>
+         <id>Opening Price $_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Opening Price $</messageKey>
+         <locale>zh_CN</locale>
+         <message>开盘价格</message>
+      </message>
+      <message>
+         <id>Parameter 1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Parameter 1</messageKey>
+         <locale>zh_CN</locale>
+         <message>参数1</message>
+      </message>
+      <message>
+         <id>Parameter 2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Parameter 2</messageKey>
+         <locale>zh_CN</locale>
+         <message>参数2</message>
+      </message>
+      <message>
+         <id>Parameter 3_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Parameter 3</messageKey>
+         <locale>zh_CN</locale>
+         <message>参数3</message>
+      </message>
+      <message>
+         <id>Pie Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Pie Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>Pie Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Pie Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意: 图表数据是来自Joget系统表的真实值。</message>
+      </message>
+      <message>
+         <id>Pie Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Pie Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Pie Chart: Total Forms in App</message>
+      </message>
+      <message>
+         <id>Pie Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Pie Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>饼图: 表单在APP中的总数</message>
+      </message>
+      <message>
+         <id>Pie Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Pie Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>饼图</message>
+      </message>
+      <message>
+         <id>Pie Chart: Total Forms in App_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Pie Chart: Total Forms in App</messageKey>
+         <locale>zh_CN</locale>
+         <message>饼图:应用中的表单总数</message>
+      </message>
+      <message>
+         <id>plabel.populateChart2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>plabel.populateChart2</messageKey>
+         <locale>zh_CN</locale>
+         <message>填充图表数据</message>
+      </message>
+      <message>
+         <id>plabel.process1.approver1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>plabel.process1.approver1</messageKey>
+         <locale>zh_CN</locale>
+         <message>待审批人</message>
+      </message>
+      <message>
+         <id>plabel.process1.approver2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>plabel.process1.approver2</messageKey>
+         <locale>zh_CN</locale>
+         <message>待审批人</message>
+      </message>
+      <message>
+         <id>plabel.process1.resubmit_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>plabel.process1.resubmit</messageKey>
+         <locale>zh_CN</locale>
+         <message>申请人重提交</message>
+      </message>
+      <message>
+         <id>Popup Select Box_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Popup Select Box</messageKey>
+         <locale>zh_CN</locale>
+         <message>弹出式选择</message>
+      </message>
+      <message>
+         <id>Process - View or Print_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Process - View or Print</messageKey>
+         <locale>zh_CN</locale>
+         <message>流程 - 查看或打印</message>
+      </message>
+      <message>
+         <id>Process_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Process</messageKey>
+         <locale>zh_CN</locale>
+         <message>进度</message>
+      </message>
+      <message>
+         <id>Purchase Joget License_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Purchase Joget License</messageKey>
+         <locale>zh_CN</locale>
+         <message>购买Joget许可证</message>
+      </message>
+      <message>
+         <id>Radio_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Radio</messageKey>
+         <locale>zh_CN</locale>
+         <message>单选项</message>
+      </message>
+      <message>
+         <id>rcounter_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>rcounter</messageKey>
+         <locale>zh_CN</locale>
+         <message>计数</message>
+      </message>
+      <message>
+         <id>Rejected_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Rejected</messageKey>
+         <locale>zh_CN</locale>
+         <message>已拒绝</message>
+      </message>
+      <message>
+         <id>Request Detail Page2_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Detail Page2</messageKey>
+         <locale>en_US</locale>
+         <message>Selections</message>
+      </message>
+      <message>
+         <id>Request Detail Page2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Detail Page2</messageKey>
+         <locale>zh_CN</locale>
+         <message>选择元素</message>
+      </message>
+      <message>
+         <id>Request Detail Page3_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Detail Page3</messageKey>
+         <locale>en_US</locale>
+         <message>File &amp; Image Uploads</message>
+      </message>
+      <message>
+         <id>Request Detail Page3_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Detail Page3</messageKey>
+         <locale>zh_CN</locale>
+         <message>图片&amp;文件上传</message>
+      </message>
+      <message>
+         <id>Request Detail Page4_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Detail Page4</messageKey>
+         <locale>en_US</locale>
+         <message>Spreedsheet &amp; Grids</message>
+      </message>
+      <message>
+         <id>Request Detail Page4_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Detail Page4</messageKey>
+         <locale>zh_CN</locale>
+         <message>电子表格&amp;其他表格</message>
+      </message>
+      <message>
+         <id>Request Inbox_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Inbox</messageKey>
+         <locale>zh_CN</locale>
+         <message>待办申请</message>
+      </message>
+      <message>
+         <id>Request Information_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Information</messageKey>
+         <locale>zh_CN</locale>
+         <message>申请信息</message>
+      </message>
+      <message>
+         <id>Request No._zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request No.</messageKey>
+         <locale>zh_CN</locale>
+         <message>申请编号</message>
+      </message>
+      <message>
+         <id>Request Reason_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Reason</messageKey>
+         <locale>en_US</locale>
+         <message>Approver has requested you to resubmit request</message>
+      </message>
+      <message>
+         <id>Request Reason_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Request Reason</messageKey>
+         <locale>zh_CN</locale>
+         <message>审批人要求您重新提交申请</message>
+      </message>
+      <message>
+         <id>Requester Inbox_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Requester Inbox</messageKey>
+         <locale>zh_CN</locale>
+         <message>待办申请</message>
+      </message>
+      <message>
+         <id>requires you to_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>requires you to</messageKey>
+         <locale>zh_CN</locale>
+         <message>要求您</message>
+      </message>
+      <message>
+         <id>Rich Text Editor_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Rich Text Editor</messageKey>
+         <locale>zh_CN</locale>
+         <message>富文本编辑器</message>
+      </message>
+      <message>
+         <id>Select approver 1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Select approver 1</messageKey>
+         <locale>zh_CN</locale>
+         <message>选择审批人1</message>
+      </message>
+      <message>
+         <id>Select approver 2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Select approver 2</messageKey>
+         <locale>zh_CN</locale>
+         <message>选择审批人2</message>
+      </message>
+      <message>
+         <id>Select Box_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Select Box</messageKey>
+         <locale>zh_CN</locale>
+         <message>下拉选项</message>
+      </message>
+      <message>
+         <id>Select_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Select</messageKey>
+         <locale>zh_CN</locale>
+         <message>用户</message>
+      </message>
+      <message>
+         <id>Selection Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Selection Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>选择元素</message>
+      </message>
+      <message>
+         <id>Selections_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Selections</messageKey>
+         <locale>zh_CN</locale>
+         <message>选择元素</message>
+      </message>
+      <message>
+         <id>Showcase About P1_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Showcase About P1</messageKey>
+         <locale>en_US</locale>
+         <message>This showcase app features many of the low-code/no-code application development complete with workflow process.</message>
+      </message>
+      <message>
+         <id>Showcase About P1_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Showcase About P1</messageKey>
+         <locale>zh_CN</locale>
+         <message>这个展示应用程序的特点是许多低代码/无代码的应用程序开发完成的工作流程。</message>
+      </message>
+      <message>
+         <id>Showcase About P2_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Showcase About P2</messageKey>
+         <locale>en_US</locale>
+         <message>&lt;p&gt;In the workflow example, a user can raise a request and submit to two approvers. The request form displays the use of multipage forms, a variety of form fields, spreadsheet and file/image upload fields. The app is complete with email notification. Approvers can approve the request, instruct the requester to resubmit the form or outright reject the form.&lt;/p&gt;
+
+&lt;p&gt;Login to proceed.&lt;/p&gt;</message>
+      </message>
+      <message>
+         <id>Showcase About P2_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Showcase About P2</messageKey>
+         <locale>zh_CN</locale>
+         <message>在工作流示例中，用户可以提出请求并提交给两个审批者。请求表单显示了多页表单、各种表单字段、电子表格和文件/图像上传字段的使用。该应用程序是完整的电子邮件通知。审批者可以批准请求，指示请求者重新提交表单或直接拒绝表单。
+登录继续。</message>
+      </message>
+      <message>
+         <id>Signature_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Signature</messageKey>
+         <locale>zh_CN</locale>
+         <message>签名</message>
+      </message>
+      <message>
+         <id>Spreadsheet_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Spreadsheet</messageKey>
+         <locale>zh_CN</locale>
+         <message>电子表格</message>
+      </message>
+      <message>
+         <id>Standard Fields_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Standard Fields</messageKey>
+         <locale>zh_CN</locale>
+         <message>标准元素</message>
+      </message>
+      <message>
+         <id>Status_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Status</messageKey>
+         <locale>zh_CN</locale>
+         <message>状态</message>
+      </message>
+      <message>
+         <id>Stock Code_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stock Code</messageKey>
+         <locale>zh_CN</locale>
+         <message>股票代码</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Fictitious data for illustration purposes only.</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注: 虚构的数据仅供说明之用。</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Stocks Candlestick Chart</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>股票烛台图</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>Date</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Price</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>价格</message>
+      </message>
+      <message>
+         <id>Stocks Candlestick Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks Candlestick Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>股票烛台图</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Fictitious data for illustration purposes only.</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注: 虚构的数据仅供说明之用。</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>Stocks OHLC Chart</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>股票OHLC图</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>Date</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>日期</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Price</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>价格</message>
+      </message>
+      <message>
+         <id>Stocks OHLC Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Stocks OHLC Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>股票OHLC图</message>
+      </message>
+      <message>
+         <id>Submit a new reques label_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Submit a new reques label</messageKey>
+         <locale>en_US</locale>
+         <message>Submit a new request</message>
+      </message>
+      <message>
+         <id>Submit a new reques label_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Submit a new reques label</messageKey>
+         <locale>zh_CN</locale>
+         <message>新建申请</message>
+      </message>
+      <message>
+         <id>Submit A New Request_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Submit A New Request</messageKey>
+         <locale>zh_CN</locale>
+         <message>新建申请</message>
+      </message>
+      <message>
+         <id>TextArea_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>TextArea</messageKey>
+         <locale>zh_CN</locale>
+         <message>多行文本区域</message>
+      </message>
+      <message>
+         <id>TextField_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>TextField</messageKey>
+         <locale>zh_CN</locale>
+         <message>文本字段</message>
+      </message>
+      <message>
+         <id>this request with reason_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>this request with reason</messageKey>
+         <locale>zh_CN</locale>
+         <message>申请的理由为</message>
+      </message>
+      <message>
+         <id>Time_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Time</messageKey>
+         <locale>zh_CN</locale>
+         <message>仅时间</message>
+      </message>
+      <message>
+         <id>Total_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Total</messageKey>
+         <locale>zh_CN</locale>
+         <message>积</message>
+      </message>
+      <message>
+         <id>TotalForms_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>TotalForms</messageKey>
+         <locale>zh_CN</locale>
+         <message>总表单数</message>
+      </message>
+      <message>
+         <id>username_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>username</messageKey>
+         <locale>zh_CN</locale>
+         <message>用户名</message>
+      </message>
+      <message>
+         <id>Value_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Value</messageKey>
+         <locale>zh_CN</locale>
+         <message>值</message>
+      </message>
+      <message>
+         <id>View All Requests_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View All Requests</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看所有申请</message>
+      </message>
+      <message>
+         <id>View Calendar_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Calendar</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看会议</message>
+      </message>
+      <message>
+         <id>View Candlestick Chart Data_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Candlestick Chart Data</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看烛台图数据</message>
+      </message>
+      <message>
+         <id>View of the workflow process design_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View of the workflow process design</messageKey>
+         <locale>zh_CN</locale>
+         <message>工作流流程设计视图</message>
+      </message>
+      <message>
+         <id>View Sample Data - Candlestic_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Sample Data - Candlestic</messageKey>
+         <locale>en_US</locale>
+      </message>
+      <message>
+         <id>View Sample Data - Candlestic_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Sample Data - Candlestic</messageKey>
+         <locale>zh_CN</locale>
+         <message>日历数据</message>
+      </message>
+      <message>
+         <id>View Sample Data - Candlestick_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Sample Data - Candlestick</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看烛台图数据</message>
+      </message>
+      <message>
+         <id>View Sample Data - Charts_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Sample Data - Charts</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看标准图数据</message>
+      </message>
+      <message>
+         <id>View Standard Chart:Data_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View Standard Chart:Data</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看标准图数据</message>
+      </message>
+      <message>
+         <id>View_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>View</messageKey>
+         <locale>zh_CN</locale>
+         <message>查看</message>
+      </message>
+      <message>
+         <id>We showcase the charting capabilities of Joget_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>We showcase the charting capabilities of Joget</messageKey>
+         <locale>zh_CN</locale>
+         <message>我们展示了Joget的制图能力</message>
+      </message>
+      <message>
+         <id>We showcase the individual form element features of Joget_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>We showcase the individual form element features of Joget</messageKey>
+         <locale>zh_CN</locale>
+         <message>我们展示了Joget的各种元素的特征</message>
+      </message>
+      <message>
+         <id>We showcase the workflow capabilities of Joget_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>We showcase the workflow capabilities of Joget</messageKey>
+         <locale>zh_CN</locale>
+         <message>我们展示了Joget的工作流功能</message>
+      </message>
+      <message>
+         <id>Welcome to Joget DX Showcase App_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Welcome to Joget DX Showcase App</messageKey>
+         <locale>zh_CN</locale>
+         <message>欢迎来到Joget DX展示应用程序</message>
+      </message>
+      <message>
+         <id>Welcome_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>Welcome</messageKey>
+         <locale>zh_CN</locale>
+         <message>欢迎</message>
+      </message>
+      <message>
+         <id>XY Chart Note_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart Note</messageKey>
+         <locale>en_US</locale>
+         <message>Note: Chart data are real values derived from your Joget system tables.</message>
+      </message>
+      <message>
+         <id>XY Chart Note_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart Note</messageKey>
+         <locale>zh_CN</locale>
+         <message>注意: 图表数据是来自Joget系统表的真实值。</message>
+      </message>
+      <message>
+         <id>XY Chart Title_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart Title</messageKey>
+         <locale>en_US</locale>
+         <message>XY Chart: Total Number of Forms in Apps</message>
+      </message>
+      <message>
+         <id>XY Chart Title_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart Title</messageKey>
+         <locale>zh_CN</locale>
+         <message>折线图: 表单在APP中的总数</message>
+      </message>
+      <message>
+         <id>XY Chart X_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart X</messageKey>
+         <locale>en_US</locale>
+         <message>App Name</message>
+      </message>
+      <message>
+         <id>XY Chart X_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart X</messageKey>
+         <locale>zh_CN</locale>
+         <message>应用名称</message>
+      </message>
+      <message>
+         <id>XY Chart Y_en_US</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart Y</messageKey>
+         <locale>en_US</locale>
+         <message>Total Forms In App</message>
+      </message>
+      <message>
+         <id>XY Chart Y_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart Y</messageKey>
+         <locale>zh_CN</locale>
+         <message>表单总数</message>
+      </message>
+      <message>
+         <id>XY Chart_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart</messageKey>
+         <locale>zh_CN</locale>
+         <message>折线图</message>
+      </message>
+      <message>
+         <id>XY Chart: Total Number of Forms in Apps_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>XY Chart: Total Number of Forms in Apps</messageKey>
+         <locale>zh_CN</locale>
+         <message>折线图:应用中的表单总数</message>
+      </message>
+      <message>
+         <id>股票OHLC图_zh_CN</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <messageKey>股票OHLC图</messageKey>
+         <locale>zh_CN</locale>
+         <message>Stocks OHLC Chart</message>
+      </message>
+   </messageList>
+   <resourceList>
+      <appResource>
+         <id>showcase_workflow.png</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <filesize>109294</filesize>
+         <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.showcase_workflow.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
+      </appResource>
+      <appResource>
+         <id>showcase-icon.png</id>
+         <appId>jshowcasedx</appId>
+         <appVersion>1</appVersion>
+         <filesize>47313</filesize>
+         <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.showcase-icon.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
+      </appResource>
+   </resourceList>
+   <license>1i44Neuka7RRu+22/jBpdqFp/tdq4ijmTtjtQIzB0iiChu98G79hNHSaJF+QK4EE</license>
+</appDefinition>

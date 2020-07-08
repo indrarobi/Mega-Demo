@@ -1,0 +1,25 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "featureListGrid"}
+    },
+    "columns": [{
+        "id": "column_0",
+        "label": "ID",
+        "name": "id"
+    }],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_featureListGrid",
+    "name": "List - Feature - List Grid",
+    "order": "2",
+    "orderBy": "dateCreated",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "useSession": ""
+}

@@ -1,0 +1,125 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.plugin.enterprise.ListGrid",
+                    "properties": {
+                        "abortRelatedRunningProcesses": "",
+                        "buttonLabel": "",
+                        "deleteFiles": "",
+                        "deleteGridData": "true",
+                        "deleteMessage": "Delete row?",
+                        "deleteSubformData": "",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "enableSorting": "",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "",
+                        "height": "80%",
+                        "id": "LG",
+                        "label": "",
+                        "listId": "userlist",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "fk",
+                                "formDefId": "gridLG"
+                            }
+                        },
+                        "options": [
+                            {
+                                "editable": "no",
+                                "format": "",
+                                "formatType": "text",
+                                "label": "username",
+                                "value": "username",
+                                "width": ""
+                            },
+                            {
+                                "editable": "no",
+                                "format": "",
+                                "formatType": "text",
+                                "label": "First Name",
+                                "value": "firstName",
+                                "width": ""
+                            },
+                            {
+                                "editable": "no",
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Last Name",
+                                "value": "lastName",
+                                "width": ""
+                            }
+                        ],
+                        "pageSize": "10",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "requestParams": [],
+                        "showRowNumber": "",
+                        "sortField": "sort",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "fk",
+                                "formDefId": "gridLG"
+                            }
+                        },
+                        "submit-label-normal": "",
+                        "submit-label-readonly": "",
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "width": "60%"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field14_1",
+                        "label": "",
+                        "value": "<br/><br/>"
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section3",
+            "label": "List Grids",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "featureListGrid",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Feature - List Grid",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "j_sc_tran_t4"
+    }
+}

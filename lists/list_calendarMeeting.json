@@ -1,0 +1,51 @@
+{
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "id": "action_0",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "confirmation": "",
+            "datalist_type": "action",
+            "href": "cv",
+            "hrefColumn": "",
+            "hrefParam": "",
+            "label": "View Calendar",
+            "target": "_self",
+            "visible": ""
+        },
+        "type": "text"
+    }],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "calendarMeeting"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "Date",
+            "name": "date"
+        },
+        {
+            "id": "column_2",
+            "label": "Meeting Name",
+            "name": "name"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_calendarMeeting",
+    "name": "List - Calendar - Meeting",
+    "order": "2",
+    "orderBy": "date",
+    "pageSize": "100",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

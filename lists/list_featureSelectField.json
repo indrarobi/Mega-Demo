@@ -1,0 +1,121 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "featureSelectField"}
+    },
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.DepartmentOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheIdlePause": "120",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "orgId": ""
+                        }
+                    }
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Check Box",
+            "name": "checkBox",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.GroupOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheIdlePause": "120",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "orgId": ""
+                        }
+                    }
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Multi Select Box",
+            "name": "multiSelectBox",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.GradeOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheIdlePause": "120",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "orgId": ""
+                        }
+                    }
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Radio",
+            "name": "radio",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_featureSelectField",
+    "name": "List - Feature - Select Fields",
+    "order": "2",
+    "orderBy": "dateCreated",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "useSession": ""
+}
